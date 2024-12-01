@@ -1,0 +1,53 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  min-height: 100vh;
+  display: grid;
+
+  grid-gap: 2rem;
+  padding: 1rem;
+}
+
+button {
+  background: white;
+  padding: 15px 25px;
+  color: black;
+  border: none;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+input {
+  padding: 7px;
+  font-size: 2rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#login-screen,
+#result-success-screen {
+  place-content: center;
+  display: grid;
+  text-align: center;
+}
+
+#login-error,
+#result-success-screen {
+  display: none;
+}
+
+#login-error {
+  color: red;
+  margin-bottom: 0;
+}

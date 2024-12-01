@@ -1,0 +1,28 @@
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brujas, varitas y escobas</title>
+  <link type="text/css" rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="login-screen">
+    <form onsubmit="checkLogin();return false;">
+      <h2>¿Cuál es el resultado?</h2>
+      <input type="password" name="password" id="password" />
+      <br />
+      <h3 id="login-error">Error</h3>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <div id="result-success-screen">
+    <h2>Buen trabajo!</h2>
+    <h3 id="success-text"></h3>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
