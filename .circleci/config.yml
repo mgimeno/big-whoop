@@ -14,7 +14,8 @@ jobs:
           command: |
             mkdir -p ~/.ssh
             ssh-keyscan $SSH_HOST >> ~/.ssh/known_hosts
-            ssh $SSH_USER@$SSH_HOST "rm -dRf /home/mgimeno/apps/big-whoop"
+            # do not remove the folder as it has the solutions folder in the server which is not part of the repository
+            # ssh $SSH_USER@$SSH_HOST "rm -dRf /home/mgimeno/apps/big-whoop"
             ssh $SSH_USER@$SSH_HOST "mkdir -p /home/mgimeno/apps/big-whoop"
             scp -rv ./website/* $SSH_USER@$SSH_HOST:apps/big-whoop
 workflows:
